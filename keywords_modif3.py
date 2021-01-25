@@ -101,8 +101,7 @@ def run():
         if set(sub_conj_mwes).intersection(multi_word(list(words))):
             sub_conj +=1
 
-        #res = (verb > 3) and bool(noun) and bool(sub_conj)
-        res = bool(verb) and bool(noun) and bool(sub_conj)
+        res = (verb > 3) and bool(noun) and bool(sub_conj)
         if res:
             return words
         else: 
